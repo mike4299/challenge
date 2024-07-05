@@ -7,6 +7,7 @@ export default function Register() {
     const [loading, setLoading] = useState(false)
     const first_name = useRef()
     const last_name = useRef()
+    const wallet_address = useRef()
     const email = useRef()
     const password = useRef()
     const password2 = useRef(undefined)
@@ -17,6 +18,7 @@ export default function Register() {
         const data = {
             first_name: first_name.current.value,
             last_name: last_name.current.value,
+            wallet_address: wallet_address.current.value,
             email: email.current.value,
             password: password.current.value,
             password2: password2.current.value
@@ -54,6 +56,9 @@ export default function Register() {
                 </div>
                 <div className="mb-3">
                     <input type="password" placeholder='Confirm Password' autoComplete='off' className='form-control' id="passwordConfirmation" ref={password2} />
+                </div>
+                <div className="mb-3">
+                    <input type="text" placeholder='Wallet Address' autoComplete='off' className='form-control' id="passwordConfirmation" ref={wallet_address} />
                 </div>
                 <div className="mb-3">
                     <button disabled={loading} className='btn btn-success' type="submit">Register</button>
