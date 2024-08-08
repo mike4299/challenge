@@ -21,7 +21,7 @@ const CheckBalance = (props) => {
       setError(null);
     } catch (err) {
       console.error(err);
-      setError('Failed to fetch balance. Please check the address and try again.');
+      setError('Failed to fetch balance. Please check the address or Metamask and try again.');
     }
   };
 
