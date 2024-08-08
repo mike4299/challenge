@@ -145,7 +145,6 @@ CSRF_TRUSTED_ORIGINS = [
 CORS_EXPOSE_HEADERS = [
     "authorization",
     "content-type",
-    "origin",
     "x-csrftoken"
 ]
 SESSION_COOKIE_SECURE = True
