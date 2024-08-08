@@ -146,7 +146,8 @@ CORS_EXPOSE_HEADERS = [
     "authorization",
     "content-type",
     "origin",
-    "x-csrftoken"]
+    "x-csrftoken"
+]
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = "None"
 SESSION_COOKIE_SAMESITE = "None"
